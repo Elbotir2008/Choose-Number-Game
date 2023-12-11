@@ -4,8 +4,9 @@ let heartCount = 0;
 localStorage.setItem("randomNumbers", randomNumbers);
 function handleSubmit() {
   if (input.value == randomNumbers) {
-    alert("You Find Random Number, You Win!");
-    location.reload();
+    if (alert("You Find Random Number, You Win!")) {
+      location.reload();
+    }
   } else if (input.value == "") {
     alert("You have to write any number from 1 to 20");
   } else {
