@@ -1,7 +1,7 @@
 let input = document.getElementById("input");
 let randomNumbers = Math.floor(Math.random() * 10) + 1;
 let heartCount = 0;
-localStorage.setItem("randomNumbers", randomNumbers);
+console.log(randomNumbers);
 function handleSubmit() {
   if (input.value == randomNumbers) {
     if (alert("You Find Random Number, You Win!")) {
