@@ -1,5 +1,5 @@
 let input = document.getElementById("input");
-let randomNumbers = Math.floor(Math.random() * 20) + 1;
+let randomNumbers = Math.floor(Math.random() * 10) + 1;
 let heartCount = 0;
 localStorage.setItem("randomNumbers", randomNumbers);
 function handleSubmit() {
